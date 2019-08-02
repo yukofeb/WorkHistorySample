@@ -1,0 +1,38 @@
+{
+  "name": "web3-templete",
+  "version": "1.0.0",
+  "license": "ISC",
+  "description": "web3-templete",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "npm run artifacts && yarn start",
+    "mc": "truffle compile --all && truffle migrate --reset",
+    "mcr": "truffle compile --all && truffle migrate --network ropsten",
+    "artifacts": "cp -r ../build/contracts/ ./src/contracts",
+    "start": "react-scripts start && npm run artifacts",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
+    "antd": "^3.12.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^2.1.5",
+    "react-toastify": "^4.4.3",
+    "truffle-hdwallet-provider": "^1.0.2",
+    "web3": "^1.0.0-beta.55"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

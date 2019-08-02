@@ -1,0 +1,42 @@
+.UserHistories {
+  /* text-align: center; */
+}
+
+.UserHistories-logo {
+  animation: UserHistories-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.UserHistories-header {
+  /* background-color: white; */
+  height: 80px;
+  padding: 10px;
+  color: black;
+}
+
+.UserHistories-title {
+  font-size: 1.5em;
+}
+
+.UserHistories-intro {
+  font-size: large;
+}
+
+.UserHistories-button {
+  margin: theme.spacing(1);
+}
+
+.UserHistories-input {
+  display: 'none';
+}
+
+.UserHistories-paper {
+  width: '80%';
+  marginTop: theme.spacing(3);
+  overflowX: 'auto';
+  rounded: true;
+}
+
+.UserHistories-table {
+  minWidth: 650;
+}
