@@ -60,12 +60,6 @@ export default class App extends React.Component{
       .catch(error => {
         console.log('set error', error);
       });
-    // この下が実行されない。。setValueが終わっていない？
-    console.log('b')
-    const response = await contract.methods.getValue().call();
-    console.log('c')
-    console.log(`response: ${response}`)
-    this.setState({storageValue: response});
   }
 
   runExample = async () => {
